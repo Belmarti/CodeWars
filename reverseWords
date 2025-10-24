@@ -1,0 +1,11 @@
+String reverseWords(String str) {
+  String resul="";
+  List<String> cortada = str.split(" ");
+  for(int i=cortada.length-1;i>=0;i--){
+    resul+=cortada[i];
+    if(i!=0){
+      resul+=" ";
+    }
+  }
+  return resul;
+}
