@@ -1,0 +1,21 @@
+8 kyu
+Count of positives / sum of negatives
+Dart:
+
+  List<int> countPositivesSumNegatives(List<int>? input) {
+    int posi=0;
+    int negativ=0;
+    if(input!=null){
+      for(int num in input){
+        if(num>0){
+          posi=posi+1;
+        }else if(num<0){
+          negativ=negativ+num;
+        }
+      }
+    }
+    if(input==null || (posi==0 && negativ==0)){
+      return [];
+    }
+    return[posi,negativ];
+  }
