@@ -1,0 +1,11 @@
+8 kyu
+Sum of positive
+Dart:
+
+int positiveSum(List<int> arr) {
+  int suma=0;
+  for(int num in arr){
+    if(num>0)suma+=num;
+  }
+  return suma;
+}
